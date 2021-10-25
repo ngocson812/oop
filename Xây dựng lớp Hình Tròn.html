@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp Hình Tròn</title>
+</head>
+<body>
+<script>
+  class Circle {
+    constructor(radius, color) {
+      this.radius = radius;
+      this.color = color;
+    }
+    getRadius() {
+      return this.radius;
+    }
+
+    getArea() {
+      return Math.PI*this.radius;
+    }
+  }
+
+  let showResult = new Circle(2,"blue");
+  alert("radius: " + showResult.getRadius() + "; area: " + showResult.getArea())
+</script>
+</body>
+</html>
